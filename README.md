@@ -1,4 +1,10 @@
+1.Node modules are not included please download express,node and cors.
+2.open terminal type 
+npm install node
+npm install express
+
 Operations:
+
 1.go to terminal type:node app.js the server will run 
 2.Then open browser and type localhost:3000 then you will be navigated to the webpage.
 
