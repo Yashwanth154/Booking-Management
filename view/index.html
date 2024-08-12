@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>CRUD Operations for Bookings</h1>
+        <h3>ENTER DETAILS</h3>
+        <div id="input-container">
+            <input type="text" id="customer-id-input" placeholder="Enter customer ID">
+            <input type="text" id="customer-name-input" placeholder="Enter customer name">
+            <input type="date" id="date-input" placeholder="Enter booking date">
+            <input type="time" id="time-input" placeholder="Enter booking time">
+            <input type="text" id="number-input" placeholder="Enter total amount">
+            <input type="text" id="status-input" placeholder="Enter status">
+            <input type="text" id="payment-input" placeholder="Enter payment method">
+            <input type="number" id="duration-input" placeholder="Enter duration">
+            <button id="add-btn" onclick="addUser()">Create/Add</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Booking Date</th>
+                <th>Booking Time</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Payment Method</th>
+                <th>Duration</th>
+                <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <div id="update-container" style="display: none;">
+            <input type="text" id="update-customer-id">
+            <input type="text" id="update-customer-name">
+            <input type="date" id="update-booking-date">
+            <input type="time" id="update-booking-time">
+            <input type="number" id="update-total-amount" placeholder="enter amount">
+            <input type="text" id="update-status" placeholder="enter status">
+            <input type="text" id="update-payment-type" placeholder="enter payment type">
+            <input type="number" id="update-duration-minutes" placeholder="enter duration type">
+            <button id="update-btn" onclick="updateUser()">Update</button>
+            <button id="cancel-btn" onclick="hideUpdateForm()">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
